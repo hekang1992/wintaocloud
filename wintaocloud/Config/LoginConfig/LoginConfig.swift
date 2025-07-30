@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import BRPickerView
 
 let WDY_PHONE = "WDY_PHONE"
 let WDY_SESSIONID = "WDY_SESSIONID"
 let WDY_CUSTOMERNUMBER = "WDY_CUSTOMERNUMBER"
 let WDY_USER_ID = "WDY_USER_ID"
+
+let ROOT_VC = "ROOT_VC"
 
 var IS_LOGIN: Bool {
     if let sessionID = UserDefaults.standard.object(forKey: WDY_SESSIONID) as? String {
@@ -106,4 +109,16 @@ class GetCacheConfig {
         }
     }
     
+}
+
+class AdressModelSingle {
+    static let shared = AdressModelSingle()
+    private init() {}
+    var modelArray: [BRProvinceModel]?
+}
+
+class LocationModelSingle {
+    static let shared = LocationModelSingle()
+    private init() {}
+    var locationInfo: [String: String]?
 }
