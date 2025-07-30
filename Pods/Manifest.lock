@@ -1,0 +1,105 @@
+PODS:
+  - Alamofire (5.10.2)
+  - BRPickerView (2.9.7):
+    - BRPickerView/All (= 2.9.7)
+  - BRPickerView/All (2.9.7):
+    - BRPickerView/Default
+    - BRPickerView/Deprecated
+  - BRPickerView/Core (2.9.7)
+  - BRPickerView/DatePicker (2.9.7):
+    - BRPickerView/Core
+  - BRPickerView/Default (2.9.7):
+    - BRPickerView/DatePicker
+    - BRPickerView/TextPicker
+  - BRPickerView/Deprecated (2.9.7):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/AddressPickerView (= 2.9.7)
+    - BRPickerView/Deprecated/Base (= 2.9.7)
+    - BRPickerView/Deprecated/StringPickerView (= 2.9.7)
+  - BRPickerView/Deprecated/AddressPickerView (2.9.7):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/Base
+  - BRPickerView/Deprecated/Base (2.9.7):
+    - BRPickerView/Core
+  - BRPickerView/Deprecated/StringPickerView (2.9.7):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/Base
+  - BRPickerView/TextPicker (2.9.7):
+    - BRPickerView/Core
+  - DeviceKit (5.6.0)
+  - FSPagerView (0.8.3)
+  - IQKeyboardManagerSwift (6.5.16)
+  - Kingfisher (7.11.0)
+  - lottie-ios (4.5.2)
+  - MJRefresh (3.7.9)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - SAMKeychain (1.5.3)
+  - SnapKit (5.7.1)
+  - Toast-Swift (5.1.1)
+  - TYAlertController (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BRPickerView
+  - DeviceKit
+  - FSPagerView
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - lottie-ios
+  - MJRefresh
+  - RxCocoa
+  - RxGesture
+  - RxSwift
+  - SAMKeychain
+  - SnapKit
+  - Toast-Swift
+  - TYAlertController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BRPickerView
+    - DeviceKit
+    - FSPagerView
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios
+    - MJRefresh
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SAMKeychain
+    - SnapKit
+    - Toast-Swift
+    - TYAlertController
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  BRPickerView: 6548c8fbe21c0f29e72ab2fae177d196edc83f09
+  DeviceKit: 9f2e0b68984a384f864b0f4e40a54bae43636bd8
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
+  lottie-ios: 96784afc26ea031d3e2b6cae342a4b8915072489
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+
+PODFILE CHECKSUM: 176cddad88a13b20742d6bd8de4955ba1828cec0
+
+COCOAPODS: 1.16.2
