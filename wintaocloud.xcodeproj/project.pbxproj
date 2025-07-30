@@ -21,8 +21,14 @@
 		73798E662E39CBBD00676E57 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E652E39CBBD00676E57 /* BaseView.swift */; };
 		73798E682E39CCE100676E57 /* HttpRequsetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E672E39CCD600676E57 /* HttpRequsetManager.swift */; };
 		73798E6B2E39CF3800676E57 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E6A2E39CF3800676E57 /* WebViewController.swift */; };
-		73798E6E2E39D06600676E57 /* LocationManagerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E6D2E39D06500676E57 /* LocationManagerConfig.swift */; };
-		73798E702E39D16400676E57 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E6F2E39D16300676E57 /* Untitled.swift */; };
+		73798E6E2E39D06600676E57 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E6D2E39D06500676E57 /* LocationService.swift */; };
+		73798E702E39D16400676E57 /* OtherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E6F2E39D16300676E57 /* OtherConfig.swift */; };
+		73798E722E39E03200676E57 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E712E39E02F00676E57 /* AppModel.swift */; };
+		73798E752E39E2B000676E57 /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E742E39E2B000676E57 /* HeadView.swift */; };
+		73798E772E39E4BF00676E57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E762E39E4BF00676E57 /* HomeViewController.swift */; };
+		73798E792E39E4C900676E57 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E782E39E4C900676E57 /* CenterViewController.swift */; };
+		73798E7B2E39E4D800676E57 /* DiligenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E7A2E39E4D800676E57 /* DiligenceViewController.swift */; };
+		73798E7D2E39E4EF00676E57 /* RiskControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E7C2E39E4EF00676E57 /* RiskControlViewController.swift */; };
 		9D855DFBD1BF8EEBBDA02839 /* Pods_wintaocloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9944ACF4E86D7D7A9766006 /* Pods_wintaocloud.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +51,14 @@
 		73798E652E39CBBD00676E57 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		73798E672E39CCD600676E57 /* HttpRequsetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequsetManager.swift; sourceTree = "<group>"; };
 		73798E6A2E39CF3800676E57 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		73798E6D2E39D06500676E57 /* LocationManagerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerConfig.swift; sourceTree = "<group>"; };
-		73798E6F2E39D16300676E57 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
+		73798E6D2E39D06500676E57 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		73798E6F2E39D16300676E57 /* OtherConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherConfig.swift; sourceTree = "<group>"; };
+		73798E712E39E02F00676E57 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		73798E742E39E2B000676E57 /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
+		73798E762E39E4BF00676E57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73798E782E39E4C900676E57 /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		73798E7A2E39E4D800676E57 /* DiligenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiligenceViewController.swift; sourceTree = "<group>"; };
+		73798E7C2E39E4EF00676E57 /* RiskControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskControlViewController.swift; sourceTree = "<group>"; };
 		C9944ACF4E86D7D7A9766006 /* Pods_wintaocloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wintaocloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +135,7 @@
 			children = (
 				73798E482E39C45600676E57 /* View */,
 				73798E472E39C44A00676E57 /* Controller */,
+				73798E782E39E4C900676E57 /* CenterViewController.swift */,
 			);
 			path = Center;
 			sourceTree = "<group>";
@@ -132,6 +145,7 @@
 			children = (
 				73798E4A2E39C46200676E57 /* View */,
 				73798E492E39C45A00676E57 /* Controller */,
+				73798E7A2E39E4D800676E57 /* DiligenceViewController.swift */,
 			);
 			path = Diligence;
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 		73798E442E39C43900676E57 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73798E762E39E4BF00676E57 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +214,7 @@
 		73798E4B2E39C46600676E57 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73798E7C2E39E4EF00676E57 /* RiskControlViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,10 +255,10 @@
 		73798E582E39C4EB00676E57 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				73798E6F2E39D16300676E57 /* Untitled.swift */,
-				73798E6C2E39D02B00676E57 /* LocationService */,
+				73798E732E39E29E00676E57 /* HeadView */,
 				73798E622E39CB8000676E57 /* PopConfig */,
 				73798E592E39C4F400676E57 /* LoginConfig */,
+				73798E6C2E39D02B00676E57 /* LocationService */,
 				73798E5F2E39CB2E00676E57 /* ExtensionConfig */,
 			);
 			path = Config;
@@ -259,6 +275,7 @@
 		73798E5C2E39C7C900676E57 /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				73798E712E39E02F00676E57 /* AppModel.swift */,
 				73798E5D2E39CAB200676E57 /* NetworkManager.swift */,
 				73798E672E39CCD600676E57 /* HttpRequsetManager.swift */,
 			);
@@ -268,6 +285,7 @@
 		73798E5F2E39CB2E00676E57 /* ExtensionConfig */ = {
 			isa = PBXGroup;
 			children = (
+				73798E6F2E39D16300676E57 /* OtherConfig.swift */,
 				73798E602E39CB3E00676E57 /* ExtensionConfig.swift */,
 			);
 			path = ExtensionConfig;
@@ -292,9 +310,17 @@
 		73798E6C2E39D02B00676E57 /* LocationService */ = {
 			isa = PBXGroup;
 			children = (
-				73798E6D2E39D06500676E57 /* LocationManagerConfig.swift */,
+				73798E6D2E39D06500676E57 /* LocationService.swift */,
 			);
 			path = LocationService;
+			sourceTree = "<group>";
+		};
+		73798E732E39E29E00676E57 /* HeadView */ = {
+			isa = PBXGroup;
+			children = (
+				73798E742E39E2B000676E57 /* HeadView.swift */,
+			);
+			path = HeadView;
 			sourceTree = "<group>";
 		};
 		E38015A2D1917923CAD76BA3 /* Frameworks */ = {
@@ -426,18 +452,24 @@
 			files = (
 				73798E372E39C32800676E57 /* AppDelegate.swift in Sources */,
 				73798E572E39C4DE00676E57 /* LaunchViewController.swift in Sources */,
-				73798E702E39D16400676E57 /* Untitled.swift in Sources */,
+				73798E702E39D16400676E57 /* OtherConfig.swift in Sources */,
+				73798E792E39E4C900676E57 /* CenterViewController.swift in Sources */,
+				73798E772E39E4BF00676E57 /* HomeViewController.swift in Sources */,
 				73798E512E39C49B00676E57 /* BaseViewController.swift in Sources */,
 				73798E612E39CB4800676E57 /* ExtensionConfig.swift in Sources */,
 				73798E682E39CCE100676E57 /* HttpRequsetManager.swift in Sources */,
+				73798E752E39E2B000676E57 /* HeadView.swift in Sources */,
 				73798E642E39CB9800676E57 /* PopPrivacyView.swift in Sources */,
 				73798E5E2E39CAC000676E57 /* NetworkManager.swift in Sources */,
+				73798E7D2E39E4EF00676E57 /* RiskControlViewController.swift in Sources */,
 				73798E6B2E39CF3800676E57 /* WebViewController.swift in Sources */,
 				73798E532E39C4B300676E57 /* BaseTabBarController.swift in Sources */,
 				73798E662E39CBBD00676E57 /* BaseView.swift in Sources */,
-				73798E6E2E39D06600676E57 /* LocationManagerConfig.swift in Sources */,
+				73798E6E2E39D06600676E57 /* LocationService.swift in Sources */,
 				73798E552E39C4C600676E57 /* BaseNavigationViewController.swift in Sources */,
+				73798E722E39E03200676E57 /* AppModel.swift in Sources */,
 				73798E5B2E39C50200676E57 /* LoginConfig.swift in Sources */,
+				73798E7B2E39E4D800676E57 /* DiligenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,20 @@ let WDY_PHONE = "WDY_PHONE"
 let WDY_SESSIONID = "WDY_SESSIONID"
 let WDY_CUSTOMERNUMBER = "WDY_CUSTOMERNUMBER"
 let WDY_USER_ID = "WDY_USER_ID"
-
 let ROOT_VC = "ROOT_VC"
+
+//用户协议
+let agreement_url = "/user-agreement"
+
+//隐私政策
+let privacy_url = "/privacy-statement"
+
+//会员协议
+let membership_agreement = "/membership-agreement"
+
+//收集协议
+let information_collection = "/information-collection"
+
 
 var IS_LOGIN: Bool {
     if let sessionID = UserDefaults.standard.object(forKey: WDY_SESSIONID) as? String {

@@ -17,27 +17,22 @@ class LaunchViewController: BaseViewController {
     
     lazy var homeBgImageView: UIImageView = {
         let homeBgImageView = UIImageView()
-        homeBgImageView.image = UIImage(named: "homelacunchimage")
+        homeBgImageView.image = UIImage(named: "launch")
         homeBgImageView.contentMode = .scaleAspectFill
         return homeBgImageView
-    }()
-    
-    lazy var priImageView: UIImageView = {
-        let priImageView = UIImageView()
-        priImageView.isUserInteractionEnabled = true
-        priImageView.image = UIImage(named: "apppriimage")
-        priImageView.contentMode = .scaleAspectFit
-        return priImageView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(homeBgImageView)
-        view.addSubview(priImageView)
         homeBgImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let clickStr = UserDefaults.standard.object(forKey: CLICK_PRIVACY) as? String ?? ""
         if clickStr == "1" {
             NetworkManager.shared.startListening()
@@ -46,8 +41,6 @@ class LaunchViewController: BaseViewController {
                 self.showAlertPrivacyView()
             }
         }
-        
-        
     }
     
 }
@@ -70,38 +63,22 @@ extension LaunchViewController {
         
         popView.oneBtn.rx.tap.subscribe(onNext: { [weak self] in
             guard let self = self else { return }
-            let pageUrl = base_url + privacy_url
-            let webVc = WebPageViewController()
-            webVc.modalPresentationStyle = .fullScreen
-            webVc.pageUrl.accept(pageUrl)
-            self.dismiss(animated: true, completion: {
-                self.present(webVc, animated: true)
-            })
-            webVc.headView.backBtn.rx.tap.subscribe(onNext: {
-                self.dismiss(animated: true, completion: {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                        self.showAlertPrivacyView()
-                    }
-                })
-            }).disposed(by: self.disposeBag)
+            self.dismiss(animated: true) {
+                let pageUrl = base_url + privacy_url
+                let webVc = WebViewController()
+                webVc.pageUrl = pageUrl
+                self.navigationController?.pushViewController(webVc, animated: true)
+            }
         }).disposed(by: disposeBag)
         
         popView.twoBtn.rx.tap.subscribe(onNext: { [weak self] in
             guard let self = self else { return }
-            let pageUrl = base_url + agreement_url
-            let webVc = WebPageViewController()
-            webVc.modalPresentationStyle = .fullScreen
-            webVc.pageUrl.accept(pageUrl)
-            self.dismiss(animated: true, completion: {
-                self.present(webVc, animated: true)
-            })
-            webVc.headView.backBtn.rx.tap.subscribe(onNext: {
-                self.dismiss(animated: true, completion: {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                        self.showAlertPrivacyView()
-                    }
-                })
-            }).disposed(by: self.disposeBag)
+            self.dismiss(animated: true) {
+                let pageUrl = base_url + agreement_url
+                let webVc = WebViewController()
+                webVc.pageUrl = pageUrl
+                self.navigationController?.pushViewController(webVc, animated: true)
+            }
         }).disposed(by: disposeBag)
         
     }

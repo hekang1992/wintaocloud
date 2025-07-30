@@ -1,21 +1,13 @@
 //
-//  BaseViewController.swift
+//  RiskControlViewController.swift
 //  wintaocloud
 //
 //  Created by 何康 on 2025/7/30.
 //
 
 import UIKit
-import RxSwift
 
-class BaseViewController: UIViewController {
-    
-    let disposeBag = DisposeBag()
-    
-    lazy var headView: HeadView = {
-        let headView = HeadView()
-        return headView
-    }()
+class RiskControlViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

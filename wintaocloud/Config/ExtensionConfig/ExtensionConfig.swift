@@ -61,3 +61,22 @@ extension UIColor {
     }
     
 }
+
+//字体
+extension UIFont {
+    class func regularFontOfSize(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size.pix())
+    }
+    
+    class func mediumFontOfSize(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size.pix(), weight: .medium)
+    }
+    
+    class func semiboldFontOfSize(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size.pix(), weight: .semibold)
+    }
+    
+    class func boldFontOfSize(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size.pix(), weight: .bold)
+    }
+}

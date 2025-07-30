@@ -14,7 +14,7 @@ import SnapKit
 
 class WebViewController: BaseViewController {
     
-    let locationService = LocationManagerConfig()  // 保留引用
+    let locationService = LocationService()  // 保留引用
     
     lazy var webView: WKWebView = {
         let userContentController = WKUserContentController()
@@ -44,7 +44,7 @@ class WebViewController: BaseViewController {
     
     lazy var progressView: UIProgressView = {
         let progressView = UIProgressView()
-        progressView.progressTintColor = UIColor.init(hexStr: "#FB7E09")
+        progressView.progressTintColor = UIColor.init(cssStr: "#FB7E09")
         return progressView
     }()
     
@@ -55,7 +55,7 @@ class WebViewController: BaseViewController {
         
         view.addSubview(headView)
         
-        locationService.getLocationInfo { locationInfo in
+        locationService.startLocation { locationInfo in
             LocationModelSingle.shared.locationInfo = locationInfo
         }
         
@@ -87,11 +87,7 @@ class WebViewController: BaseViewController {
         }
         
         if let pageUrl = pageUrl {
-            var urlString = ""
-            let loginDict = LoginConfig().dictionaryRepresentation
-            let url = URLQueryConfig.appendQueryDict(to: pageUrl, parameters: loginDict)!
-            urlString = url.replacingOccurrences(of: " ", with: "%20")
-            if let url = URL(string: urlString) {
+            if let url = URL(string: pageUrl) {
                 webView.load(URLRequest(url: url))
             }
         }
@@ -100,7 +96,7 @@ class WebViewController: BaseViewController {
             .subscribe(onNext: { [weak self] title in
                 guard let self = self else { return }
                 DispatchQueue.main.async {
-                    self.headView.nameLabel.text = title
+                    
                 }
             }).disposed(by: disposeBag)
         
@@ -131,39 +127,7 @@ extension WebViewController: WKScriptMessageHandler, WKNavigationDelegate {
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         let messageName = message.name
-        if messageName == "dinosaurJ" {
-            requestAppReview()
-        }else if messageName == "dogRutaba" {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CHANGEROOTPAGE"), object: nil)
-        }else if messageName == "bisonHali" {
-            self.navigationController?.popToRootViewController(animated: true)
-        }else if messageName == "sunflower" {//跳h5或者原生
-            let body = message.body as? String ?? ""
-            if body.contains("teffCocoaMus"){
-                LoginBackState.removeLoginInfo()
-                self.dismiss(animated: true) {
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CHANGEROOTPAGE"), object: nil)
-                }
-            }else if body.contains("unicornBrocc") {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CHANGEROOTPAGE"), object: nil)
-            }else if body.contains("flamingoCypr") {
-                let productID = getQueryParameter(from: body, parameterName: "pinguly") ?? ""
-                bclickProductDetailInfo(with: productID)
-            }
-        }else if messageName == "rowanwood" {//bugpoint
-            let body = message.body as? [String]
-            let productID = body?.first ?? ""
-            let endTime = String(Int(Date().timeIntervalSince1970 * 1000))
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                let locationInfo = LocationModelSingle.shared.locationInfo
-                let probar = locationInfo?["probar"] ?? ""
-                let cyston = locationInfo?["cyston"] ?? ""
-                PongCombineManager.goYourPoint(with: productID, type: "10", publicfic: endTime, probar: probar, cyston: cyston, endTime: endTime)
-            }
-        }else if messageName == "houseWine" {//email
-            let body = message.body
-            goEmail(with: body as? String ?? "")
-        }
+        
     }
     
     func getQueryParameter(from urlString: String, parameterName: String) -> String? {
@@ -172,41 +136,7 @@ extension WebViewController: WKScriptMessageHandler, WKNavigationDelegate {
               let queryItems = components.queryItems else {
             return nil
         }
-        
         return queryItems.first(where: { $0.name == parameterName })?.value
-    }
-    
-    func requestAppReview() {
-        if #available(iOS 14.0, *), let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            SKStoreReviewController.requestReview(in: windowScene)
-        }
-    }
-    
-    func goEmail(with email: String) {
-        guard let colonRange = email.range(of: ":"),
-              email.contains("email:") else {
-            return
-        }
-        
-        let extractedEmail = String(email[colonRange.upperBound...])
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-            .components(separatedBy: .whitespacesAndNewlines)
-            .first ?? ""
-        
-        guard !extractedEmail.isEmpty else {
-            return
-        }
-        
-        let phone = UserDefaults.standard.string(forKey: "phone") ?? ""
-        let bodyContent = "PeraLend: \(phone)"
-        
-        guard let encodedBody = bodyContent.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-              let mailtoURL = URL(string: "mailto:\(extractedEmail)?body=\(encodedBody)"),
-              UIApplication.shared.canOpenURL(mailtoURL) else {
-            return
-        }
-        
-        UIApplication.shared.open(mailtoURL)
     }
     
 }

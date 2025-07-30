@@ -16,9 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         keyBordManager()
+        changeRootVc()
         window = UIWindow()
         window?.frame = UIScreen.main.bounds
-        window?.rootViewController = LaunchViewController()
+        window?.rootViewController = BaseNavigationViewController(rootViewController: LaunchViewController())
         window?.makeKeyAndVisible()
         return true
     }
@@ -31,6 +32,15 @@ extension AppDelegate {
         let manager = IQKeyboardManager.shared
         manager.enable = true
         manager.shouldResignOnTouchOutside = true
+    }
+    
+    private func changeRootVc() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setUpRootVc(_ :)), name: NSNotification.Name(ROOT_VC), object: nil)
+    }
+    
+    @objc func setUpRootVc(_ notification: Notification) {
+        let tabBarVc = BaseTabBarController()
+        window?.rootViewController = BaseNavigationViewController(rootViewController: tabBarVc)
     }
     
 }

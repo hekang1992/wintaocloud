@@ -14,7 +14,6 @@ class BaseNavigationViewController: UINavigationController {
 
         self.navigationBar.isHidden = true
         self.navigationBar.isTranslucent = false
-        self.interactivePopGestureRecognizer?.isEnabled = false
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
