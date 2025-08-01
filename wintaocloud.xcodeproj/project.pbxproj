@@ -29,12 +29,16 @@
 		73798E792E39E4C900676E57 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E782E39E4C900676E57 /* CenterViewController.swift */; };
 		73798E7B2E39E4D800676E57 /* DiligenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E7A2E39E4D800676E57 /* DiligenceViewController.swift */; };
 		73798E7D2E39E4EF00676E57 /* RiskControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73798E7C2E39E4EF00676E57 /* RiskControlViewController.swift */; };
+		737995092E3C93EA00F84267 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737995082E3C93EA00F84267 /* LoginViewController.swift */; };
+		7379950B2E3C93F400F84267 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379950A2E3C93F400F84267 /* LoginView.swift */; };
+		7379950D2E3C9D9100F84267 /* LoginFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379950C2E3C9D9100F84267 /* LoginFooterView.swift */; };
 		9D855DFBD1BF8EEBBDA02839 /* Pods_wintaocloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9944ACF4E86D7D7A9766006 /* Pods_wintaocloud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D02E0578EC503D53E8383AA /* Pods-wintaocloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wintaocloud.debug.xcconfig"; path = "Target Support Files/Pods-wintaocloud/Pods-wintaocloud.debug.xcconfig"; sourceTree = "<group>"; };
 		554996B0BD157BCCF1BFCD2F /* Pods-wintaocloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wintaocloud.release.xcconfig"; path = "Target Support Files/Pods-wintaocloud/Pods-wintaocloud.release.xcconfig"; sourceTree = "<group>"; };
+		7337836F2E3CA852003B43C7 /* wintaocloud-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wintaocloud-Bridging-Header.h"; sourceTree = "<group>"; };
 		73798E152E39C32000676E57 /* wintaocloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wintaocloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73798E2D2E39C32800676E57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73798E2E2E39C32800676E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +63,9 @@
 		73798E782E39E4C900676E57 /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		73798E7A2E39E4D800676E57 /* DiligenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiligenceViewController.swift; sourceTree = "<group>"; };
 		73798E7C2E39E4EF00676E57 /* RiskControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskControlViewController.swift; sourceTree = "<group>"; };
+		737995082E3C93EA00F84267 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7379950A2E3C93F400F84267 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7379950C2E3C9D9100F84267 /* LoginFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFooterView.swift; sourceTree = "<group>"; };
 		C9944ACF4E86D7D7A9766006 /* Pods_wintaocloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wintaocloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +115,7 @@
 				73798E2E2E39C32800676E57 /* Assets.xcassets */,
 				73798E2D2E39C32800676E57 /* AppDelegate.swift */,
 				73798E312E39C32800676E57 /* LaunchScreen.storyboard */,
+				7337836F2E3CA852003B43C7 /* wintaocloud-Bridging-Header.h */,
 				73798E5C2E39C7C900676E57 /* Http */,
 				73798E432E39C42900676E57 /* Login */,
 				73798E422E39C3AF00676E57 /* RiskControl */,
@@ -229,6 +237,7 @@
 		73798E4D2E39C47200676E57 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				737995082E3C93EA00F84267 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,6 +245,8 @@
 		73798E4E2E39C47800676E57 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7379950A2E3C93F400F84267 /* LoginView.swift */,
+				7379950C2E3C9D9100F84267 /* LoginFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +376,7 @@
 				TargetAttributes = {
 					73798E142E39C32000676E57 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 				};
 			};
@@ -450,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737995092E3C93EA00F84267 /* LoginViewController.swift in Sources */,
 				73798E372E39C32800676E57 /* AppDelegate.swift in Sources */,
 				73798E572E39C4DE00676E57 /* LaunchViewController.swift in Sources */,
 				73798E702E39D16400676E57 /* OtherConfig.swift in Sources */,
@@ -457,6 +470,8 @@
 				73798E772E39E4BF00676E57 /* HomeViewController.swift in Sources */,
 				73798E512E39C49B00676E57 /* BaseViewController.swift in Sources */,
 				73798E612E39CB4800676E57 /* ExtensionConfig.swift in Sources */,
+				7379950B2E3C93F400F84267 /* LoginView.swift in Sources */,
+				7379950D2E3C9D9100F84267 /* LoginFooterView.swift in Sources */,
 				73798E682E39CCE100676E57 /* HttpRequsetManager.swift in Sources */,
 				73798E752E39E2B000676E57 /* HeadView.swift in Sources */,
 				73798E642E39CB9800676E57 /* PopPrivacyView.swift in Sources */,
@@ -493,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,17 +516,19 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wintaocloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "问道云";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wentao.ald;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -519,6 +537,8 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "wintaocloud/wintaocloud-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -530,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -537,17 +558,19 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wintaocloud/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "问道云";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wentao.ald;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -556,6 +579,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "wintaocloud/wintaocloud-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

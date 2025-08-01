@@ -22,5 +22,6 @@ target 'wintaocloud' do
   pod 'SAMKeychain'
   pod 'lottie-ios'
   pod 'FSPagerView'
-
+  pod 'WechatOpenSDK'
+  
 end

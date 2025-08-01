@@ -44,7 +44,7 @@ class WebViewController: BaseViewController {
     
     lazy var progressView: UIProgressView = {
         let progressView = UIProgressView()
-        progressView.progressTintColor = UIColor.init(cssStr: "#FB7E09")
+        progressView.progressTintColor = UIColor.init(cssStr: "#547AFF")
         return progressView
     }()
     
