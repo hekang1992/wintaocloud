@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Toaster
 
 extension Double {
     func pix() -> CGFloat {
@@ -166,5 +167,18 @@ final class Loading {
         indicator.stopAnimating()
         containerView.removeFromSuperview()
         overlayView.removeFromSuperview()
+    }
+}
+
+class ToastViewConfig {
+    static func showToast(message: String) {
+        ToastView.appearance().font = UIFont.boldSystemFont(ofSize: 20)
+        let toast = Toast(text: message, duration: 1.0)
+        if UIApplication.shared.windows.first != nil {
+            let centerY = SCREEN_HEIGHT * 0.5
+            ToastView.appearance().bottomOffsetPortrait = centerY
+            ToastView.appearance().bottomOffsetLandscape = centerY
+        }
+        toast.show()
     }
 }

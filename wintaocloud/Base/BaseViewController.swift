@@ -28,4 +28,10 @@ extension BaseViewController {
         self.navigationController?.pushViewController(webVc, animated: true)
     }
     
+    func popLoginVc() {
+        let loginVc = BaseNavigationController(rootViewController: LoginViewController())
+        loginVc.modalPresentationStyle = .overFullScreen
+        self.present(loginVc, animated: true)
+    }
+    
 }

