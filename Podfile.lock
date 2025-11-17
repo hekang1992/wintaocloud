@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.10.2)
   - BRPickerView (2.9.7):
     - BRPickerView/All (= 2.9.7)
   - BRPickerView/All (2.9.7):
@@ -46,7 +47,6 @@ PODS:
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
   - SAMKeychain (1.5.3)
-  - SevenSwitch (2.1.0)
   - SnapKit (5.7.1)
   - Toaster (2.3.0)
   - TYAlertController (1.2.0)
@@ -54,6 +54,7 @@ PODS:
   - WechatOpenSDK (2.0.5)
 
 DEPENDENCIES:
+  - Alamofire
   - BRPickerView
   - DeviceKit
   - DropMenuBar
@@ -68,7 +69,6 @@ DEPENDENCIES:
   - RxGesture
   - RxSwift
   - SAMKeychain
-  - SevenSwitch
   - SnapKit
   - Toaster
   - TYAlertController
@@ -77,6 +77,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - BRPickerView
     - DeviceKit
     - DropMenuBar
@@ -93,7 +94,6 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SAMKeychain
-    - SevenSwitch
     - SnapKit
     - Toaster
     - TYAlertController
@@ -101,6 +101,7 @@ SPEC REPOS:
     - WechatOpenSDK
 
 SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   BRPickerView: 6548c8fbe21c0f29e72ab2fae177d196edc83f09
   DeviceKit: d1a956e25b957efb60a87bfe70be4e00ef36846d
   DropMenuBar: cc34985e8a5b5796209bf4fe57cc1cd589b68efc
@@ -117,13 +118,12 @@ SPEC CHECKSUMS:
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  SevenSwitch: 5543327829b7bec5b29b73bad5f3cc3f92c1736d
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
   TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
   WechatOpenSDK: a363db41205f57abbc05bb6b80bf2d2ed1ea40bf
 
-PODFILE CHECKSUM: f5e5a6d74bf13c07685730eb25afdc8914912562
+PODFILE CHECKSUM: 64397c5aedcb1364a01fe287eb6ed30b43d2ba6c
 
 COCOAPODS: 1.16.2

@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-a3-iiO">
-                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-a3-iiO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -26,8 +26,8 @@
                         <constraints>
                             <constraint firstItem="9Lc-a3-iiO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4qx-4S-zGA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Lc-a3-iiO" secondAttribute="trailing" id="QnC-YS-C0m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Lc-a3-iiO" secondAttribute="bottom" id="Wsy-2J-boH"/>
-                            <constraint firstItem="9Lc-a3-iiO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="chg-1D-CKr"/>
+                            <constraint firstItem="9Lc-a3-iiO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mcG-Gs-q50"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9Lc-a3-iiO" secondAttribute="bottom" constant="-68" id="r3d-Du-dfq"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +37,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launch_image" width="250" height="541.33331298828125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

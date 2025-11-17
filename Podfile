@@ -25,7 +25,7 @@ target 'wintaocloud' do
   pod 'WechatOpenSDK'
   pod 'DYFStore'
   pod 'SAMKeychain'
-  pod 'SevenSwitch'
   pod 'KeenCodeUnit'
+  pod 'Alamofire'
 
 end
