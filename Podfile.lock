@@ -1,0 +1,129 @@
+PODS:
+  - BRPickerView (2.9.7):
+    - BRPickerView/All (= 2.9.7)
+  - BRPickerView/All (2.9.7):
+    - BRPickerView/Default
+    - BRPickerView/Deprecated
+  - BRPickerView/Core (2.9.7)
+  - BRPickerView/DatePicker (2.9.7):
+    - BRPickerView/Core
+  - BRPickerView/Default (2.9.7):
+    - BRPickerView/DatePicker
+    - BRPickerView/TextPicker
+  - BRPickerView/Deprecated (2.9.7):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/AddressPickerView (= 2.9.7)
+    - BRPickerView/Deprecated/Base (= 2.9.7)
+    - BRPickerView/Deprecated/StringPickerView (= 2.9.7)
+  - BRPickerView/Deprecated/AddressPickerView (2.9.7):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/Base
+  - BRPickerView/Deprecated/Base (2.9.7):
+    - BRPickerView/Core
+  - BRPickerView/Deprecated/StringPickerView (2.9.7):
+    - BRPickerView/Core
+    - BRPickerView/Deprecated/Base
+  - BRPickerView/TextPicker (2.9.7):
+    - BRPickerView/Core
+  - DeviceKit (5.7.0)
+  - DropMenuBar (1.0.4)
+  - DYFStore (2.3.0):
+    - DYFSwiftRuntimeProvider
+  - DYFSwiftRuntimeProvider (2.1.1)
+  - IQKeyboardManagerSwift (6.5.16)
+  - JXSegmentedView (1.4.1)
+  - KeenCodeUnit (1.0.3)
+  - Kingfisher (7.11.0)
+  - lottie-ios (4.5.2)
+  - MJRefresh (3.7.9)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - SAMKeychain (1.5.3)
+  - SevenSwitch (2.1.0)
+  - SnapKit (5.7.1)
+  - Toaster (2.3.0)
+  - TYAlertController (1.2.0)
+  - TYCyclePagerView (1.2.0)
+  - WechatOpenSDK (2.0.5)
+
+DEPENDENCIES:
+  - BRPickerView
+  - DeviceKit
+  - DropMenuBar
+  - DYFStore
+  - IQKeyboardManagerSwift
+  - JXSegmentedView
+  - KeenCodeUnit
+  - Kingfisher
+  - lottie-ios
+  - MJRefresh
+  - RxCocoa
+  - RxGesture
+  - RxSwift
+  - SAMKeychain
+  - SevenSwitch
+  - SnapKit
+  - Toaster
+  - TYAlertController
+  - TYCyclePagerView
+  - WechatOpenSDK
+
+SPEC REPOS:
+  trunk:
+    - BRPickerView
+    - DeviceKit
+    - DropMenuBar
+    - DYFStore
+    - DYFSwiftRuntimeProvider
+    - IQKeyboardManagerSwift
+    - JXSegmentedView
+    - KeenCodeUnit
+    - Kingfisher
+    - lottie-ios
+    - MJRefresh
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SAMKeychain
+    - SevenSwitch
+    - SnapKit
+    - Toaster
+    - TYAlertController
+    - TYCyclePagerView
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  BRPickerView: 6548c8fbe21c0f29e72ab2fae177d196edc83f09
+  DeviceKit: d1a956e25b957efb60a87bfe70be4e00ef36846d
+  DropMenuBar: cc34985e8a5b5796209bf4fe57cc1cd589b68efc
+  DYFStore: 9f771f0c2a93d1713f21f474e2eb57be8102a8da
+  DYFSwiftRuntimeProvider: f90dcb2b8c97ff6b5185cc423daf178c7fbcf251
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  JXSegmentedView: cd73555ce2134d1656db2cb383ba9c2f36fb5078
+  KeenCodeUnit: 6e763d076e039a6df1c68fe1526d396268128005
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
+  lottie-ios: 96784afc26ea031d3e2b6cae342a4b8915072489
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SevenSwitch: 5543327829b7bec5b29b73bad5f3cc3f92c1736d
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  WechatOpenSDK: a363db41205f57abbc05bb6b80bf2d2ed1ea40bf
+
+PODFILE CHECKSUM: f5e5a6d74bf13c07685730eb25afdc8914912562
+
+COCOAPODS: 1.16.2
